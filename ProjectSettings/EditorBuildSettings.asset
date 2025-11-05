@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WireActionProject/WireActionScene.unity
     guid: 0d68ff7c8dea29e4784648ae58023df3
+  - enabled: 1
+    path: Assets/SEi_WorkSpace/Scene/Sei_WorkScene.unity
+    guid: 7a48408f69197594885761d5803c3e9e
+  - enabled: 1
+    path: Assets/SEi_WorkSpace/Scene/Sei_work_ResultScene_Tentative.unity
+    guid: 3c59cd102cd5e2b47a9b3b22d6c45d3f
+  - enabled: 1
+    path: Assets/SEi_WorkSpace/Scene/Sei_Work_TitleScene_Tentative.unity
+    guid: 00d6d5644da4eb243a006f156adf3a9a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
