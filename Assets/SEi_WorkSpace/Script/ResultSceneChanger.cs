@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class ResultSceneChanger : MonoBehaviour
 {
-    [SerializeField] private SceneManager sceneManager;
+    [SerializeField] private Sei.SceneManager sceneManager;
     private void Update()
     {
         if (Keyboard.current.enterKey.wasPressedThisFrame)

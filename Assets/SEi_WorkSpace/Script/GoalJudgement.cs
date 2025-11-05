@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoalJudgement : MonoBehaviour
 {
-    [SerializeField] private SceneManager sceneManager;
+    [SerializeField] private Sei.SceneManager sceneManager;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
