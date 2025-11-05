@@ -11,7 +11,7 @@ namespace sei
         [SerializeField] private Slider Slider;
         [SerializeField] private float leaveDistance = 0.3f;
         [SerializeField] private float policeSpeed = 0.1f;
-        [SerializeField] private SceneManager sceneManager;
+        [SerializeField] private Sei.SceneManager sceneManager;
         // Start is called before the first frame update
         void Start()
         {

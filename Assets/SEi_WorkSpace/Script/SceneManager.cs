@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+namespace Sei
 {
-    public void ChangeSceneTitle()
+    public class SceneManager : MonoBehaviour
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_work_TitleScene_Tentative");
-    }
-    public void ChangeSceneMain()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_WorkScene");
-    }
+        public void ChangeSceneTitle()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_work_TitleScene_Tentative");
+        }
+        public void ChangeSceneMain()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_WorkScene");
+        }
 
-    public void ChangeSceneResult()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_work_ResultScene_Tentative");
+        public void ChangeSceneResult()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Sei_work_ResultScene_Tentative");
+        }
     }
 }
