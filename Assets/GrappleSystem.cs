@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum HandType { Left, Right }
 
@@ -31,9 +32,30 @@ public class GrappleSystem : MonoBehaviour
     public bool IsGrappling => grappling;
     public Vector3 GrapplePoint => grapplePoint;
 
+    [SerializeField] private InputActionReference shootAction;
+
+    private void OnEnable()
+    {
+        shootAction.action.performed += OnShootPerformed;
+        shootAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        shootAction.action.performed -= OnShootPerformed;
+        shootAction.action.Disable();
+    }
+
+    private void OnShootPerformed(InputAction.CallbackContext context)
+    {
+        if (!grappling)
+            TryStartGrapple();
+        else
+            StopGrapple();
+    }
+
     private void Update()
     {
-        HandleInput();
         if (debugEnabled) UpdateDebugRay();
     }
 
@@ -43,17 +65,6 @@ public class GrappleSystem : MonoBehaviour
         {
             ApplySwingMovement();
             ApplyRopeConstraint();
-        }
-    }
-
-    private void HandleInput()
-    {
-        if (Input.GetKeyDown(inputKey))
-        {
-            if (!grappling)
-                TryStartGrapple();
-            else
-                StopGrapple();
         }
     }
 
