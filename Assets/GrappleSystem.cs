@@ -56,7 +56,19 @@ public class GrappleSystem : MonoBehaviour
 
     private void Update()
     {
+        HandleInput();
         if (debugEnabled) UpdateDebugRay();
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetKeyDown(inputKey))
+        {
+            if (!grappling)
+                TryStartGrapple();
+            else
+                StopGrapple();
+        }
     }
 
     private void FixedUpdate()
@@ -143,7 +155,7 @@ public class GrappleSystem : MonoBehaviour
 
         Vector3 swingDir = transform.right * h + transform.forward * v;
 
-        playerRigidbody.AddForce(swingDir * swingForce, ForceMode.Acceleration);
+        //playerRigidbody.AddForce(swingDir * swingForce, ForceMode.Acceleration);
     }
 
     /// <summary>

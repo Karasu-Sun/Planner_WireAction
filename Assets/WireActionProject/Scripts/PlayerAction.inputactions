@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "SlideMove",
+                    "type": "Value",
+                    "id": "c8ad8399-9b4c-4648-8739-31ca396fd684",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -84,6 +93,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "LLopePull",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e594bfe3-33b3-4455-b06c-4df74dda1403",
+                    "path": "<XRController>/devicePosition/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SlideMove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
