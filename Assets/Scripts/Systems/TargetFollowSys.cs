@@ -105,7 +105,7 @@ public class TargetFollowSys : MonoBehaviour
 
     private void OnValidate()
     {
-        if (target != null)
+        if (!Application.isPlaying && target != null)
         {
             transform.position = target.TransformPoint(offset);
             transform.LookAt(target);

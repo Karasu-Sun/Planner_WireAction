@@ -6,7 +6,9 @@ using UnityEngine;
 public enum SceneStatusType
 {
     IsCopyRight,
-    IsTitle
+    IsGameStart,
+    IsTitle,
+    IsOption,
 }
 
 public class SceneStatus : MonoBehaviour
@@ -16,7 +18,7 @@ public class SceneStatus : MonoBehaviour
     // 内部状態管理
     private readonly Dictionary<SceneStatusType, bool> statusDict = new();
 
-    [Header("現在有効なステータス")]
+    [SerializeField, Tooltip("現在のステータス")]
     private List<string> statusList = new();
 
     private void Awake()

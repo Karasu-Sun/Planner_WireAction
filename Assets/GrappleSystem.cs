@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -176,8 +177,10 @@ public class GrappleSystem : MonoBehaviour
         }
     }
 
+    public static Action<Vector3> OnAnchorCreated;
+
     /// <summary>
-    /// デバッグ用球生成
+    /// Anchor球生成
     /// </summary>
     private void DebugDrawPoint(Vector3 pos, Color color)
     {
@@ -186,10 +189,19 @@ public class GrappleSystem : MonoBehaviour
 
         debugAnchor = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         debugAnchor.tag = "Anchor";
-        Destroy(debugAnchor.GetComponent<Collider>());
+
+        SphereCollider col = debugAnchor.GetComponent<SphereCollider>();
+        col.isTrigger = true;
+
+        Rigidbody rb = debugAnchor.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+        rb.isKinematic = true;
+
         debugAnchor.transform.position = pos;
         debugAnchor.transform.localScale = Vector3.one * debugSphereSize;
         debugAnchor.GetComponent<Renderer>().material.color = color;
+
+        OnAnchorCreated?.Invoke(pos);
     }
 
     private void UpdateDebugRay()
