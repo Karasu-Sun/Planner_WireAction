@@ -10,18 +10,32 @@ public class SwingDeToucher : MonoBehaviour
     [SerializeField] private GrappleSystem grappleSysR;
     [SerializeField] private float disTance = 2.0f;
 
-    private void FixedUpdate()
+    private Vector3? anchorPos = null;
+
+    private void OnEnable()
     {
-        GameObject anchor = GameObject.FindWithTag("Anchor");
-        if (anchor == null || player == null) return;
+        GrappleSystem.OnAnchorCreated += HandleAnchorCreated;
+    }
 
-        Vector3 anchorPos = anchor.transform.position;
-        Vector3 playerPos = player.position;
+    private void HandleAnchorCreated(Vector3 pos)
+    {
+        anchorPos = pos;
+    }
 
-        if (playerPos.x > anchorPos.x && playerPos.y > (anchorPos.y - disTance))
+    private void Update()
+    {
+        if (anchorPos == null) return;
+
+        Vector3 a = anchorPos.Value;
+        Vector3 p = player.position;
+
+        bool isRight = p.z > a.z;
+        bool isAbove = p.y > (a.y - disTance);
+
+        if (isRight && isAbove)
         {
-            grappleSysL.ForceDetach();
-            grappleSysR.ForceDetach();
+            grappleSysL.StopGrapple();
+            grappleSysR.StopGrapple();
         }
     }
 }
