@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.05
+  m_FogDensity: 0.01
   m_LinearFogStart: 1
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.30153078, g: 0.3771212, b: 0.5283019, a: 1}
@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f0f8d76bdc01f7347ae4b825c2beac55, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1584,6 +1584,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 80
@@ -2517,7 +2525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 83416756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'RoadPrefab (1) (Missing Prefab with guid: ce1914f7487a2474f80c047f2699f6a7)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2548,7 +2556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90342970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'EA_Tr_neon_sign_01a_PRE (Missing Prefab with guid: dc9abf39e43e2504ba097816da96c509)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2685,7 +2693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105722878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'RoadPrefab (4) (Missing Prefab with guid: ce1914f7487a2474f80c047f2699f6a7)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4107,6 +4115,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 40
@@ -4180,6 +4196,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4570,7 +4594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 179232929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (2) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4707,7 +4731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186175875}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'EA_Tr_neon_sign_01c_PRE (Missing Prefab with guid: a482666cefdeaa742ac275b66348cfc5)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5178,7 +5202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 197941547}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5725,7 +5749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226135283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6271,6 +6295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -6554,7 +6586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257135022}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Small_flags_1_Prefap (Missing Prefab with guid: ebe30e3dfd9f5e9499dd7e7fc67f8064)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6663,6 +6695,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -7856,7 +7896,7 @@ GameObject:
   - component: {fileID: 311547883}
   - component: {fileID: 311547882}
   - component: {fileID: 311547881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8066,6 +8106,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9950,6 +9998,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 40
@@ -10599,6 +10655,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -11761,7 +11825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493453027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12483,6 +12547,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -13529,7 +13601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588592596}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Small_flags_4_Prefap (Missing Prefab with guid: 16b951a4e207c7c4aa952b44410491e6)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15549,7 +15621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 666322381}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (4) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16150,6 +16222,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 80
@@ -16541,6 +16621,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -19475,7 +19563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 861982095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (5) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19508,6 +19596,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -21535,7 +21631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889788920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (5) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25228,7 +25324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058275573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25346,7 +25442,7 @@ GameObject:
   - component: {fileID: 1058609256}
   - component: {fileID: 1058609255}
   - component: {fileID: 1058609254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25554,7 +25650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1059659288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Small_flags_2_Prefap (Missing Prefab with guid: 12f9b5f46cfbf324583b25cf461402ef)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26268,7 +26364,7 @@ GameObject:
   - component: {fileID: 1088103411}
   - component: {fileID: 1088103410}
   - component: {fileID: 1088103409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27135,6 +27231,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -30239,7 +30343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1234266053}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (3) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30455,6 +30559,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 80
@@ -30634,6 +30746,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -32356,7 +32476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310426877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (1) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32677,6 +32797,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -34264,6 +34392,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstaclePrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 40
@@ -35112,6 +35248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 80
@@ -35186,7 +35330,7 @@ GameObject:
   - component: {fileID: 1472654623}
   - component: {fileID: 1472654622}
   - component: {fileID: 1472654621}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37860,7 +38004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599576225}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stage (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37900,7 +38044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1602520525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BuildingL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38149,7 +38293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1608349579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stage (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38617,7 +38761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1629108750}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'EA_Tr_Banner_01a_PRE (Missing Prefab with guid: d5415c1fe21a49247ba30e53828b8964)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39496,6 +39640,14 @@ PrefabInstance:
     - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_Name
       value: GrabbablePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
@@ -40896,6 +41048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstaclePrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 40
@@ -41223,7 +41383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726812965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Small_flags_3_Prefap (Missing Prefab with guid: 14a5b409f0dd28d42914f0e066f69818)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41254,7 +41414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726962270}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BuildingR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41657,6 +41817,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -42303,7 +42471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1787897017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42705,7 +42873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1808125707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'RoadPrefab (Missing Prefab with guid: ce1914f7487a2474f80c047f2699f6a7)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43056,6 +43224,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -43764,7 +43940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870370691}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'EA_Tr_Banner_01b_PRE (Missing Prefab with guid: 870b6fb39d76ca84cb5309997b9099db)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43795,7 +43971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1872834328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'RoadPrefab (3) (Missing Prefab with guid: ce1914f7487a2474f80c047f2699f6a7)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44960,7 +45136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902174094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stage (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45522,7 +45698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912582583}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (3) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46103,7 +46279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1930683372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'RoadPrefab (2) (Missing Prefab with guid: ce1914f7487a2474f80c047f2699f6a7)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46704,6 +46880,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrabbablePrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 552633413838484136, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8786416865090762712, guid: 947b8def420b9bd498a9e9882e9f2be4, type: 3}
       propertyPath: m_LocalScale.x
       value: 80
@@ -46920,7 +47104,7 @@ Transform:
   m_GameObject: {fileID: 1971021037}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.01, z: 7.81}
+  m_LocalPosition: {x: 0, y: 147.69, z: -169.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47322,6 +47506,14 @@ PrefabInstance:
     - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_Name
       value: ObstaclePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003262450658155945, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989412036573832534, guid: ef34d324afc8fff4ea83240e7a0a91f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -47923,7 +48115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006288036}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (1) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48740,7 +48932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2053453966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (4) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48771,7 +48963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065840300}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'BuildingPrefab (2) (Missing Prefab with guid: c356138977064844ab7ece52d15e6e86)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49258,7 +49450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2083962705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'EA_Tr_neon_sign_01b_PRE (Missing Prefab with guid: 719cf907783d2504fada63a2811d36f2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50269,7 +50461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2126092059}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
