@@ -140,7 +140,7 @@ public class GrappleSystem : MonoBehaviour
         if (debugAnchor != null)
             Destroy(debugAnchor);
 
-        playerRigidbody.velocity = Vector3.zero;
+        //playerRigidbody.velocity = Vector3.zero;
         SetPlayerStatus(false);
     }
 
