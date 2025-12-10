@@ -45505,7 +45505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRigidbody: {fileID: 1909482793}
-  pushForce: 0.05
+  pushForce: 0.2
   behindTransform: {fileID: 1791982324}
   pushAfterGrappleTime: 0.001
 --- !u!114 &1909482801
@@ -45553,7 +45553,7 @@ MonoBehaviour:
   player: {fileID: 1909482797}
   grappleSysL: {fileID: 1398838290}
   grappleSysR: {fileID: 477520012}
-  disTance: 2
+  disTance: 20
 --- !u!114 &1909482804
 MonoBehaviour:
   m_ObjectHideFlags: 0

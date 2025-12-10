@@ -17032,7 +17032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetRigidbody: {fileID: 1909482793}
-  pushForce: 0.2
+  pushForce: 0.035
   behindTransform: {fileID: 1791982324}
   pushAfterGrappleTime: 0.001
 --- !u!114 &1909482801
