@@ -6,7 +6,6 @@ public class PlayerGroundChecker : MonoBehaviour
 {
     [SerializeField] private float rayDistance = 0.2f; // 足元判定の距離
     [SerializeField] private LayerMask groundMask;     // 地面レイヤーを指定
-    [SerializeField] private Rigidbody rb;
 
     private void Update()
     {
@@ -18,21 +17,6 @@ public class PlayerGroundChecker : MonoBehaviour
         );
 
         PlayerStatus.Instance.SetStatus(PlayerStatusType.IsGround, isGrounded);
-
-        // 地面に接している間は落下させない
-        if (isGrounded)
-        {
-            if (rb.velocity.y < 0f)
-            {
-                rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-            }
-
-            rb.useGravity = false;
-        }
-        else
-        {
-            rb.useGravity = true;
-        }
     }
 
     private void OnDrawGizmos()
