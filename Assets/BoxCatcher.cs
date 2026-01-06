@@ -34,13 +34,16 @@ public class BoxCatcher : MonoBehaviour
             grappleSysL.StopGrapple();
             grappleSysR.StopGrapple();
 
-            StartCoroutine(SetGameStartAfterDelay(3f));
+            StartCoroutine(SetGameStartAfterDelay(4f));
         }
     }
 
     private IEnumerator SetGameStartAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+        SceneStatus.Instance.SetStatus(SceneStatusType.IsItemCatch, true);
+        yield return new WaitForSeconds(delay);
+        SceneStatus.Instance.SetStatus(SceneStatusType.IsItemCatch, false);
         SceneStatus.Instance.SetStatus(SceneStatusType.IsGameStart, true);
         Debug.Log("Game Start!");
     }
