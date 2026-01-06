@@ -9,9 +9,13 @@ public class SceneStarter : MonoBehaviour
     public SceneChanger sceneChanger_List;
 
     [Header("ˆÚ“®æ")]
-    public int sceneIndexToLoad;
+    public int MainSceneIndexToLoad;
+    public int EndSceneIndexToLoad;
+    public int OverSceneIndexToLoad;
 
     private bool hasStarted = false;
+    private bool hasEnded = false;
+    private bool hasOvered = false;
 
     private void Start()
     {
@@ -26,9 +30,36 @@ public class SceneStarter : MonoBehaviour
             hasStarted = true;
 
             SceneFader.Instance.StartFadeOut(() => {
-                sceneChanger_List.StartChangeSceneByIndex(sceneIndexToLoad);
+                sceneChanger_List.StartChangeSceneByIndex(MainSceneIndexToLoad);
                 SceneStatus.Instance.SetStatus(SceneStatusType.IsGameStart, false);
-                hasStarted = true;
+
+                hasStarted = false;
+            });
+        }
+
+        if (SceneStatus.Instance.GetStatus(SceneStatusType.IsGameEnd))
+        {
+            if (hasEnded) return;
+            hasEnded = true;
+
+            SceneFader.Instance.StartFadeOut(() => {
+                sceneChanger_List.StartChangeSceneByIndex(EndSceneIndexToLoad);
+                SceneStatus.Instance.SetStatus(SceneStatusType.IsGameEnd, false);
+
+                hasEnded = false;
+            });
+        }
+
+        if (SceneStatus.Instance.GetStatus(SceneStatusType.IsGameOver))
+        {
+            if (hasOvered) return;
+            hasOvered = true;
+
+            SceneFader.Instance.StartFadeOut(() => {
+                sceneChanger_List.StartChangeSceneByIndex(OverSceneIndexToLoad);
+                SceneStatus.Instance.SetStatus(SceneStatusType.IsGameOver, false);
+
+                hasOvered = false;
             });
         }
     }
