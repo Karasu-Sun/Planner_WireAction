@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum HandType { Left, Right }
 
@@ -31,19 +33,32 @@ public class GrappleSystem : MonoBehaviour
     public bool IsGrappling => grappling;
     public Vector3 GrapplePoint => grapplePoint;
 
+    [SerializeField] private InputActionReference shootAction;
+
+    private void OnEnable()
+    {
+        shootAction.action.performed += OnShootPerformed;
+        shootAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        shootAction.action.performed -= OnShootPerformed;
+        shootAction.action.Disable();
+    }
+
+    private void OnShootPerformed(InputAction.CallbackContext context)
+    {
+        if (!grappling)
+            TryStartGrapple();
+        else
+            StopGrapple();
+    }
+
     private void Update()
     {
         HandleInput();
         if (debugEnabled) UpdateDebugRay();
-    }
-
-    private void FixedUpdate()
-    {
-        if (grappling && springJoint != null)
-        {
-            ApplySwingMovement();
-            ApplyRopeConstraint();
-        }
     }
 
     private void HandleInput()
@@ -54,6 +69,15 @@ public class GrappleSystem : MonoBehaviour
                 TryStartGrapple();
             else
                 StopGrapple();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (grappling && springJoint != null)
+        {
+            ApplySwingMovement();
+            ApplyRopeConstraint();
         }
     }
 
@@ -116,7 +140,7 @@ public class GrappleSystem : MonoBehaviour
         if (debugAnchor != null)
             Destroy(debugAnchor);
 
-        playerRigidbody.velocity = Vector3.zero;
+        //playerRigidbody.velocity = Vector3.zero;
         SetPlayerStatus(false);
     }
 
@@ -132,7 +156,7 @@ public class GrappleSystem : MonoBehaviour
 
         Vector3 swingDir = transform.right * h + transform.forward * v;
 
-        playerRigidbody.AddForce(swingDir * swingForce, ForceMode.Acceleration);
+        //playerRigidbody.AddForce(swingDir * swingForce, ForceMode.Acceleration);
     }
 
     /// <summary>
@@ -153,8 +177,10 @@ public class GrappleSystem : MonoBehaviour
         }
     }
 
+    public static Action<Vector3> OnAnchorCreated;
+
     /// <summary>
-    /// デバッグ用球生成
+    /// Anchor球生成
     /// </summary>
     private void DebugDrawPoint(Vector3 pos, Color color)
     {
@@ -163,10 +189,19 @@ public class GrappleSystem : MonoBehaviour
 
         debugAnchor = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         debugAnchor.tag = "Anchor";
-        Destroy(debugAnchor.GetComponent<Collider>());
+
+        SphereCollider col = debugAnchor.GetComponent<SphereCollider>();
+        col.isTrigger = true;
+
+        Rigidbody rb = debugAnchor.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+        rb.isKinematic = true;
+
         debugAnchor.transform.position = pos;
         debugAnchor.transform.localScale = Vector3.one * debugSphereSize;
         debugAnchor.GetComponent<Renderer>().material.color = color;
+
+        OnAnchorCreated?.Invoke(pos);
     }
 
     private void UpdateDebugRay()
