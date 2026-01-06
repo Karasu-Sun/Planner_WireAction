@@ -9,6 +9,9 @@ public enum SceneStatusType
     IsGameStart,
     IsTitle,
     IsOption,
+    IsItemCatch,
+    IsGameEnd,
+    IsGameOver
 }
 
 public class SceneStatus : MonoBehaviour
